@@ -1,1 +1,16 @@
-
+/* Background color for the whole page */
+body {
+  background-color: #f0f8ff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+/* Other styles */
+#display {
+  margin-top: 20px;
+}
+.word {
+  display: inline-block;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}

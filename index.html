@@ -5,14 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Who is God?</title>
   <link rel="stylesheet" href="style.css">
-  
+  <style>
+    /* Inline CSS for Arabic text */
+    .arabic-text {
+      direction: rtl; /* Right-to-left direction */
+      font-size: 20px;
+      font-family: Arial, sans-serif; /* or another Arabic-friendly font */
+    }
+  </style>
+</head>
 <body>
+
   <div id="display"></div>
   
   <h1>Who is God to you?</h1>
   <input type="text" id="wordInput" placeholder="Enter your response:">
   <button onclick="addWord()">Add response</button>
 
+  <!-- Arabic Text Section -->
+  <div class="arabic-text">
+    <!-- Add your Arabic text here -->
+    <p>الله هو النور والهدى</p>
+  </div>
 
   <script src="script.js"></script>
 

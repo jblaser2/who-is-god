@@ -28,12 +28,32 @@ function addWord() {
   }
 }
 
-// Function to display a word
+// Function to display a word with delete functionality
 function displayWord(wordObj) {
   const displayDiv = document.getElementById('display');
   const wordElement = document.createElement('span');
   wordElement.textContent = wordObj.text;
   wordElement.className = 'word';
   wordElement.style.color = wordObj.color;
+  
+  // Add click event to delete individual word
+  wordElement.onclick = function() {
+    deleteWord(wordObj);
+    displayDiv.removeChild(wordElement);
+  };
+  
   displayDiv.appendChild(wordElement);
+}
+
+// Function to delete a specific word from localStorage
+function deleteWord(wordObj) {
+  const words = JSON.parse(localStorage.getItem('words')) || [];
+  const updatedWords = words.filter(word => word.text !== wordObj.text || word.color !== wordObj.color);
+  localStorage.setItem('words', JSON.stringify(updatedWords));
+}
+
+// Function to clear all words
+function clearAllWords() {
+  localStorage.removeItem('words'); // Clear words from localStorage
+  document.getElementById('display').innerHTML = ''; // Clear words from display
 }

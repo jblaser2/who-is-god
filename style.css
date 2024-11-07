@@ -14,3 +14,10 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
+
+  /* Inline CSS for Arabic text */
+.arabic-text {
+  direction: rtl; /* Right-to-left direction */
+  font-size: 20px;
+  font-family: Arial, sans-serif; /* or another Arabic-friendly font */
+}

@@ -14,4 +14,9 @@ body {
   font-size: 20px;
   font-weight: bold;
 }
+.full-screen {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover; /* Ensure the image fills the screen while cropping if necessary */
+}
 }

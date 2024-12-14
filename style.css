@@ -26,3 +26,8 @@ body {
   width: 100vw; /* Full width */
   height: 100vh; /* Full height */
 }
+.responsive-image {
+  width: 100%;         /* Stretches to the full width of the screen */
+  height: 50vh;        /* Fills half the viewport height */
+  object-fit: cover;   /* Ensures the image covers the area while maintaining aspect ratio */
+}

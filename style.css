@@ -46,9 +46,9 @@ body {
 /* Style for landscape screens */
 @media (orientation: landscape) {
   .conditional-image {
-    width: 63%;
-    height: auto; /* Fill half the viewport height */
-    object-fit: cover; /* Ensure it fills while cropping if necessary */
+    height: 50vh; /* Fill half the viewport height */
+    width: auto;
+    object-fit: fill; /* Ensure it fills while cropping if necessary */
   }
 }
 

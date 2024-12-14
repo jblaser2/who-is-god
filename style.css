@@ -36,3 +36,25 @@ body {
   height: auto;        /* Stretch to fill half the viewport height */
   object-fit: fill;    /* Stretch the image to fit the dimensions, even if it distorts */
 }
+/* General style for all devices */
+.conditional-image {
+  width: 100%; /* Full width of the screen */
+  height: auto; /* Maintain aspect ratio by default */
+  object-fit: cover; /* Crop as needed to fit the container */
+}
+
+/* Style for landscape screens */
+@media (orientation: landscape) {
+  .conditional-image {
+    height: 50vh; /* Fill half the viewport height */
+    object-fit: cover; /* Ensure it fills while cropping if necessary */
+  }
+}
+
+/* Style for portrait screens */
+@media (orientation: portrait) {
+  .conditional-image {
+    height: auto; /* Adjust height to maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible without cropping */
+  }
+}

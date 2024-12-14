@@ -33,6 +33,6 @@ body {
 }
 .stretch-image {
   width: 100%;         /* Stretch to fit the full width of the screen */
-  height: 50vh;        /* Stretch to fill half the viewport height */
+  height: auto;        /* Stretch to fill half the viewport height */
   object-fit: fill;    /* Stretch the image to fit the dimensions, even if it distorts */
 }

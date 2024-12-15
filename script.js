@@ -28,20 +28,23 @@ function addWord() {
   }
 }
 
-// Function to display a word with delete functionality
 function displayWord(wordObj) {
   const displayDiv = document.getElementById('display');
   const wordElement = document.createElement('span');
+
+  // Random font family from a list
+  const fonts = ['Arial', 'Georgia', 'Courier New', 'Verdana', 'Tahoma', 'Times New Roman', 'Impact'];
+  const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+
+  // Set text and style
   wordElement.textContent = wordObj.text;
   wordElement.className = 'word';
   wordElement.style.color = wordObj.color;
-  
-  // Add click event to delete individual word
-  wordElement.onclick = function() {
-    deleteWord(wordObj);
-    displayDiv.removeChild(wordElement);
-  };
-  
+  wordElement.style.fontFamily = randomFont; // Apply random font
+  wordElement.style.display = 'block'; // Ensure words stack for better spacing (optional)
+  wordElement.style.textAlign = 'center'; // Center-align each response (optional)
+
+  // Append the element to the display div
   displayDiv.appendChild(wordElement);
 }
 

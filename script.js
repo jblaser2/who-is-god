@@ -41,8 +41,7 @@ function displayWord(wordObj) {
   wordElement.className = 'word';
   wordElement.style.color = wordObj.color;
   wordElement.style.fontFamily = randomFont; // Apply random font
-  wordElement.style.display = 'block'; // Ensure words stack for better spacing (optional)
-  wordElement.style.textAlign = 'center'; // Center-align each response (optional)
+  wordElement.style.margin = '0 15px'; // Add horizontal space between responses
 
   // Append the element to the display div
   displayDiv.appendChild(wordElement);

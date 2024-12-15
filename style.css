@@ -9,8 +9,8 @@ body {
   margin-top: 20px;
 }
 .word {
-  display: inline-block;
-  margin: 10px; /* Add more space between words */
+  display: inline-block; /* Ensure responses stay inline */
+  margin: 0 15px; /* Add space only on the left and right */
   font-size: 20px;
   font-weight: bold;
   transition: all 0.3s ease; /* Optional: smooth effect for appearance */

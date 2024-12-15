@@ -60,3 +60,23 @@ body {
     object-fit: contain; /* Ensure the entire image is visible without cropping */
   }
 }
+
+#scroll-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+  margin-top: 50px;
+  border-top: 2px solid #ccc;
+  opacity: 0; /* Ensures content isn't visible until animation triggers */
+}
+
+#scroll-section h1, #scroll-section p, #scroll-section blockquote {
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  padding: 10px 20px;
+  border-left: 4px solid #e74c3c;
+  background-color: #ecf0f1;
+}

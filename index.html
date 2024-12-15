@@ -5,21 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Who is God?</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-  <!-- The background image -->
-  <!-- <div class="background-image"></div> -->
-  
-  <!-- Main content -->
+  <!-- Existing content -->
   <div id="content">
     <img src="images/image.png" alt="Visual Representation of answers" class="conditional-image">
     <div id="display"></div>
     <h1>Who is God to you?</h1>
     <input type="text" id="wordInput" placeholder="Enter your response..." onkeydown="checkEnter(event)">
     <button onclick="addWord()">Add response</button>
-    <button onclick="clearAllWords()">Clear My Response</button> <!-- Clear All button -->
+    <button onclick="clearAllWords()">Clear My Response</button>
   </div>
 
+  <!-- Scroll-triggered content -->
+  <div id="scroll-section" data-aos="fade-up">
+    <h1>Who Is God To You?</h1>
+    <p>In <em>Fall 2024</em>, I set out on a journey across the globe, asking the same question to everyone I met:</p>
+    <blockquote>“Who is God to you?”</blockquote>
+    <p>The responses I received were as diverse as the people themselves—<em>ranging from Panamanian nature worshippers and Swiss atheists to Franciscan friars and Greek painters</em>. Yet, despite the differences, there was something deeply universal in their answers.</p>
+    <p>Everywhere I went, I saw how humans are searching for a connection to the divine. This project is a visual representation of those responses and a reflection of my realization:</p>
+    <blockquote>The shared longing for the sacred reveals how much more alike we are than different.</blockquote>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init(); // Initialize AOS library for scroll animations
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

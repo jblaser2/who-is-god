@@ -57,3 +57,9 @@ function clearAllWords() {
   localStorage.removeItem('words'); // Clear words from localStorage
   document.getElementById('display').innerHTML = ''; // Clear words from display
 }
+function checkEnter(event) {
+  // Check if the key pressed is "Enter" (key code 13 or 'Enter' for modern browsers)
+  if (event.key === "Enter") {
+    addWord(); // Call the function to add the response
+  }
+}

@@ -80,3 +80,26 @@ blockquote {
   border-left: 4px solid #e74c3c;
   background-color: #ecf0f1;
 }
+.spacer {
+  height: 100vh; /* Full screen height of spacing */
+}
+.scroll-down {
+  text-align: center;
+  font-size: 1em;
+  color: #555;
+  margin-top: 20px;
+  animation: fade-in 3s ease-in-out infinite;
+}
+
+.scroll-down span {
+  font-size: 2em;
+  display: block;
+  margin-top: 5px;
+}
+
+@keyframes fade-in {
+  0%, 100% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 0.5; transform: translateY(10px); }
+}
+
+

@@ -102,4 +102,6 @@ blockquote {
   50% { opacity: 0.5; transform: translateY(10px); }
 }
 
-
+.spacer-two {
+  height:25vh;
+}

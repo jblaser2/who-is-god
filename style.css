@@ -81,7 +81,7 @@ blockquote {
   background-color: #ecf0f1;
 }
 .spacer {
-  height: 50vh; /* Full screen height of spacing */
+  height: 100vh; /* Full screen height of spacing */
 }
 .scroll-down {
   text-align: center;

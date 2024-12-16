@@ -80,8 +80,7 @@ blockquote {
   font-size: 1.2em;
   color: #7f8c8d;
   padding: 10px 20px;
-  border-left: 4px solid #e74c3c;
-  background-color: #ecf0f1;
+  color: white;
 }
 .spacer {
   height: 8vh; /* Full screen height of spacing */

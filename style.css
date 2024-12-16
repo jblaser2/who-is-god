@@ -66,11 +66,14 @@ body {
   background-color: #258DCB;
   margin-top: 50px;
   border-top: 2px solid #ccc;
-  opacity: 0; /*Ensures content isn't visible until animation triggers */
+  opacity: 0; /* Start invisible */
+  transform: translate3d(0, 100px, 0); /* Move slightly down initially */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
 }
 
-#scroll-section h1, #scroll-section p, #scroll-section blockquote {
-  margin-bottom: 20px;
+#scroll-section.aos-animate {
+  opacity: 1 !important; /* Fully visible when animation triggers */
+  transform: translate3d(0, 0, 0) !important; /* Reset position */
 }
 
 blockquote {
